@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     description: site.seo.description,
     locale: 'pt_BR',
     type: 'website',
-    images: [{ url: '/og.jpg', width: 1200, height: 630, alt: 'Dra. Cinele Azevedo — Harmonização Facial Full Face' }],
+    images: [{ url: '/og-cinele.jpg', width: 1200, height: 630, alt: 'Dra. Cinele Azevedo — Harmonização Facial Full Face' }],
   },
-  twitter: { card: 'summary_large_image', title: site.seo.title, description: site.seo.description, images: ['/og.jpg'] },
+  twitter: { card: 'summary_large_image', title: site.seo.title, description: site.seo.description, images: ['/og-cinele.jpg'] },
 };
 export default function RootLayout({children}: Readonly<{children:React.ReactNode}>) {
   return <html lang="pt-BR"><body style={{

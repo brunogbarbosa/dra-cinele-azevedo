@@ -28,4 +28,4 @@ Nome, especialidade, cidade, CRBM 41117 e WhatsApp foram transcritos da captura 
 
 Fotos fornecidas pelo solicitante, convertidas para WebP sem retoques clínicos. A galeria mantém os comparativos completos e usa recortes do original apenas no modo de comparação; enquadramentos podem variar. Antes da divulgação pública, a responsável deve validar os textos e autorizações de uso das imagens clínicas.
 
-Favicon CA em grafite, marfim e dourado, com versões SVG, PNG, ICO e Apple Touch. OG personalizada com retrato real. Fontes locais e licenças em `public/fonts`. Este projeto não usa hospedagem Sites.
+Favicon CA em grafite, marfim e dourado, com versões SVG, PNG, ICO e Apple Touch. OG em `public/og-cinele.jpg`: arte fornecida pelo solicitante, otimizada em JPEG 1200 × 630 sem cortar o layout. Fontes locais e licenças em `public/fonts`. Este projeto não usa hospedagem Sites.
