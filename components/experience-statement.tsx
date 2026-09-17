@@ -14,7 +14,7 @@ function ImageSeal({ id }: { id: string }) {
       <path id={sealPath} d="M 13,63 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
     </defs>
     <text className={styles.sealCopy} textLength="282" lengthAdjust="spacing">
-      <textPath href={`#${sealPath}`} startOffset="1%">ESTÉTICA · SAÚDE · CONFIANÇA · </textPath>
+      <textPath href={`#${sealPath}`} startOffset="1%">NATURALIDADE · TÉCNICA · CUIDADO · </textPath>
     </text>
     <text className={styles.sealMark} x="63" y="74" textAnchor="middle">ca.</text>
   </svg>;
@@ -83,28 +83,25 @@ export function ExperienceStatement() {
     <figure className={styles.photo} data-experience-motion="photo">
       <Image
         src={site.images.beauty}
-        alt="Dra. Cinele Azevedo em encontro profissional de harmonização facial"
+        alt="Dra. Cinele Azevedo sentada em um ambiente de referência em harmonização facial."
         fill
         sizes="(max-width: 700px) 94vw, (max-width: 1100px) 50vw, 45vw"
       />
       <span className={styles.photoWash} aria-hidden="true" />
-      <svg className={styles.photoArc} viewBox="0 0 720 740" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-        <path d="M 735 -18 C 526 49 414 177 371 359 C 345 470 349 594 371 758" pathLength="1" vectorEffect="non-scaling-stroke" data-experience-motion="line" />
-      </svg>
-      <p className={styles.photoCopy} data-experience-motion="photo-copy">TRAÇOS<br />QUE REVELAM<br />O SEU MELHOR.<span aria-hidden="true" /></p>
+      <p className={styles.photoCopy} data-experience-motion="photo-copy">SEUS TRAÇOS.<br />SUA HISTÓRIA.<br />SUA ESSÊNCIA.<span aria-hidden="true" /></p>
       <ImageSeal id={uid} />
     </figure>
 
     <blockquote className={styles.quote} data-experience-motion="quote">
       <span className={styles.quoteMark} aria-hidden="true">“</span>
       <div>
-        <p>Mais do que estética,<br />é sobre se sentir bem com quem você é.</p>
+        <p>Valorizar sua beleza.<br />Preservar sua essência.</p>
         <footer><span aria-hidden="true" /><cite>CINELE AZEVEDO</cite></footer>
       </div>
     </blockquote>
 
     <a className={styles.cta} href="#experiencia" data-experience-motion="cta">
-      <span>CONHEÇA A EXPERIÊNCIA</span>
+      <span>CONHEÇA O MEU MÉTODO</span>
       <ArrowUpRight size={25} strokeWidth={1.4} aria-hidden="true" />
     </a>
   </section>;

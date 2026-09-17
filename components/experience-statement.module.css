@@ -239,8 +239,8 @@
   overflow: hidden;
   border: 1px solid transparent;
   border-radius: 999px;
-  background: linear-gradient(110deg, #0d1110, #252a25 55%, #0d1110);
-  box-shadow: 0 18px 40px rgb(13 17 16 / .14);
+  background: linear-gradient(110deg, #48222c, #673540 55%, #46212b);
+  box-shadow: 0 18px 40px rgb(72 34 44 / .11);
   color: #fffaf8;
   font-size: clamp(11px, .92vw, 18px);
   line-height: 1;
@@ -593,3 +593,8 @@
     transform: none;
   }
 }
+.root{--experience-paper:var(--paper);--experience-ink:var(--ink);background:var(--paper)}
+.cta{background:var(--wine);color:var(--ivory)}
+.quote p{color:var(--ink)}
+.photoCopy{color:var(--ivory);text-shadow:0 1px 8px #30251f}
+.photoWash{background:linear-gradient(0deg,#30251f66,transparent 40%)}

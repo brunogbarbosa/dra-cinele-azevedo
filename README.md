@@ -1,30 +1,31 @@
 # Dra. Cinele Azevedo
 
-Site editorial em Next.js, React e TypeScript para a Dra. Cinele Azevedo, biomédica especializada em Harmonização Facial Full Face no Rio de Janeiro.
-
-## Vercel
-
-Importe este repositório na Vercel com o preset **Next.js**. A raiz do repositório já contém toda a configuração necessária.
-
-- Instalação: `npm ci`
-- Build: `npm run build`
-- Variáveis de ambiente: nenhuma obrigatória
-
-O endereço de produção informado pela Vercel é usado automaticamente nos metadados. Para domínio próprio, preencha `seo.url` em `data/site.ts`.
+Site editorial personalizado a partir do **Premium Vendas V3**. Hero cinematográfico, retratos reais, galeria com ampliação e comparação, navegação mobile, animações com suporte a movimento reduzido e agendamento por WhatsApp.
 
 ## Desenvolvimento
 
-Use Node.js 20.9 ou superior:
+Node.js 20.9 ou superior.
 
-```bash
+```sh
 npm ci
 npm run dev
 ```
 
+## Validação
+
+```sh
+npm run typecheck
+npm run build
+```
+
+## Vercel
+
+Importe este repositório. Framework: **Next.js**. Diretório raiz: **./**. Use os comandos padrão de instalação e build. Não há variáveis de ambiente obrigatórias. A URL de produção da Vercel é usada automaticamente nos metadados. Para um domínio próprio, defina `site.seo.url` em `data/site.ts`.
+
 ## Conteúdo e identidade
 
-Os dados confirmados estão centralizados em `data/site.ts`: nome, CRBM, WhatsApp, Instagram, cidade, imagens e registros de resultados. A direção visual usa preto, marfim e dourado-champagne, inspirada no perfil público e nos materiais fornecidos.
+Nome, especialidade, cidade, CRBM 41117 e WhatsApp foram transcritos da captura do perfil Instagram fornecida pelo solicitante. O acesso direto ao Instagram foi limitado; a captura foi usada como referência. Não foram inventados endereço de clínica, formação complementar, depoimentos ou números de atendimentos.
 
-O site inclui hero responsivo com área segura para retrato e texto, apresentação profissional, experiência de atendimento, sete comparativos reais, galeria ampliável, controle de antes e depois, contato via WhatsApp, favicon próprio e imagem social. As animações respeitam `prefers-reduced-motion`.
+Fotos fornecidas pelo solicitante, convertidas para WebP sem retoques clínicos. A galeria mantém os comparativos completos e usa recortes do original apenas no modo de comparação; enquadramentos podem variar. Antes da divulgação pública, a responsável deve validar os textos e autorizações de uso das imagens clínicas.
 
-As fotografias são os arquivos originais fornecidos para este projeto. Não são usadas imagens geradas da profissional ou de pacientes.
+Favicon CA em grafite, marfim e dourado, com versões SVG, PNG, ICO e Apple Touch. OG personalizada com retrato real. Fontes locais e licenças em `public/fonts`. Este projeto não usa hospedagem Sites.

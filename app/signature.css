@@ -1,4 +1,4 @@
-/* Cinele Azevedo — retained editorial layout with a personalized identity. */
+/* Fernanda Cardoso — wine, caramel, marfim and an editorial rhythm. */
 .chapter-tag,.eyebrow{font-size:12px;letter-spacing:.13em;line-height:1.6;text-transform:uppercase}
 .header{height:106px;display:flex;align-items:center;justify-content:space-between;gap:30px;padding:0 5%;background:var(--ivory);border-bottom:1px solid var(--line);position:relative;z-index:30}.header.scrolled{position:sticky;top:0;height:84px;background:#faf7f5ed;backdrop-filter:blur(18px);margin-bottom:22px}
 .wordmark{display:flex;align-items:center;gap:17px;flex-shrink:0}.brand-monogram{font-family:var(--serif);font-style:italic;font-size:60px;letter-spacing:-.09em;line-height:1;color:var(--rose-deep)}.brand-type{font-size:13px;letter-spacing:.14em;line-height:1.4}.brand-type small{display:block;font-size:9px;letter-spacing:.15em;margin-top:7px;color:var(--rose-deep)}
@@ -45,3 +45,4 @@
 @media(max-width:1100px){.hero-eyebrow{font-size:10px}.hero-seal>span{font-size:8px}.hero-baseline>span{font-size:9px}.author-heading h2{font-size:5.6vw}}
 @media(max-width:700px){.hero-eyebrow{font-size:10px;letter-spacing:.055em}.hero-text-link{font-size:13px}.hero-portrait small{font-size:11px}.hero-seal{display:none}.hero-baseline>span{font-size:9px}.essence-top>span{font-size:9px}.chapter-tag{font-size:11px}.essence-principles p{font-size:15px}.gallery-item figcaption{font-size:14px}.gallery-item figcaption>span:last-child{font-size:10px}.gallery-end p{font-size:13px}.author-heading h2{font-size:14.7vw}.author-story>p,.ritual-list p{font-size:16px}.social-chapter>div{font-size:12px}.footer-bottom{font-size:11px}.statement-chapter{min-height:530px}.viewer-mode{font-size:12px}.essence-motion{font-size:11px}.menu-dialog .eyebrow{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.essence-tilt{transform:none}.hero-visual:hover .hero-portrait img{transform:none}}
+.gallery-heading p{font-size:16px}

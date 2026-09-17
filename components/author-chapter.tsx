@@ -6,7 +6,7 @@ import { useEffect, useId, useRef } from 'react';
 import { site } from '@/data/site';
 import styles from './author-chapter.module.css';
 
-const biography = 'Acredito em uma harmonização facial que respeita histórias, valoriza detalhes e revela o que há de mais autêntico em cada pessoa. Meu trabalho vai além de procedimentos: começa na escuta e busca resultados que ainda parecem seus.';
+const biography = site.bio;
 
 function BrandSeal({ id }: { id: string }) {
   const pathId = `${id}-author-seal`;
@@ -75,10 +75,10 @@ export function AuthorChapter() {
 
     <div className={styles.stage}>
       <div className={styles.copy}>
-        <h2 id="author-title" aria-label="Cuidar é enxergar além.">
+        <h2 id="author-title" aria-label="Cuidar é preservar sua essência.">
           <span className={styles.titleMask}><span data-author-motion="title">Cuidar é</span></span>
-          <span className={styles.titleMask}><span data-author-motion="title">enxergar</span></span>
-          <span className={styles.titleMask}><em data-author-motion="title">além.</em></span>
+          <span className={styles.titleMask}><span data-author-motion="title">preservar</span></span>
+          <span className={styles.titleMask}><em data-author-motion="title">sua essência.</em></span>
         </h2>
         <p className={styles.subcopy} data-author-motion="subcopy">Cada detalhe começa<br />na escuta.</p>
       </div>
@@ -86,22 +86,22 @@ export function AuthorChapter() {
       <figure className={styles.photo} data-author-motion="photo">
         <Image
           src={site.images.about}
-          alt="Dra. Cinele Azevedo em evento profissional de harmonização facial"
+          alt="Dra. Cinele Azevedo em um evento profissional de harmonização facial."
           fill
           sizes="(max-width: 700px) 51vw, (max-width: 1100px) 56vw, 54vw"
         />
       </figure>
 
       <article className={styles.card} data-author-motion="card">
-        <p className={styles.cardLabel}>DRA. CINELE AZEVEDO</p>
+        <p className={styles.cardLabel}>DRA. CINELE AZEVEDO · CRBM 41117</p>
         <p className={styles.cardCopy}>{biography}</p>
         <a className={styles.cta} href={site.instagram} target="_blank" rel="noreferrer">
-          <span>Conheça minha história</span>
+          <span>Conheça meu olhar</span>
           <span className={styles.ctaCircle} aria-hidden="true"><ArrowUpRight size={24} strokeWidth={1.25} /></span>
         </a>
       </article>
 
-      <aside className={styles.sideNote} aria-label="Mais que procedimentos, pessoas.">
+      <aside className={styles.sideNote} aria-label="Mais que tratamentos, pessoas.">
         <span>MAIS QUE PROCEDIMENTOS, PESSOAS.</span>
         <i aria-hidden="true" />
         <b aria-hidden="true" />
@@ -110,9 +110,9 @@ export function AuthorChapter() {
       <svg className={`${styles.thread} ${styles.threadDesktop}`} viewBox="0 0 1600 110" preserveAspectRatio="none" aria-hidden="true" focusable="false">
         <defs>
           <radialGradient id={`${uid}-author-pearl`} cx="30%" cy="25%">
-            <stop stopColor="#fff9ed" />
-            <stop offset=".5" stopColor="#c4a66d" />
-            <stop offset="1" stopColor="#8f733e" />
+            <stop stopColor="#f8eeee" />
+            <stop offset=".5" stopColor="#bc8d96" />
+            <stop offset="1" stopColor="#775059" />
           </radialGradient>
         </defs>
         <path d="M -30 30 C 260 84 540 91 800 58 C 1065 25 1320 91 1630 27" pathLength="1" vectorEffect="non-scaling-stroke" data-author-motion="line" />
@@ -122,9 +122,9 @@ export function AuthorChapter() {
       <svg className={`${styles.thread} ${styles.threadMobile}`} viewBox="0 0 430 546" preserveAspectRatio="none" aria-hidden="true" focusable="false">
         <defs>
           <radialGradient id={`${uid}-author-pearl-mobile`} cx="30%" cy="25%">
-            <stop stopColor="#fff9ed" />
-            <stop offset=".5" stopColor="#c4a66d" />
-            <stop offset="1" stopColor="#8f733e" />
+            <stop stopColor="#f8eeee" />
+            <stop offset=".5" stopColor="#bc8d96" />
+            <stop offset="1" stopColor="#775059" />
           </radialGradient>
         </defs>
         <path d="M -20 475 C 55 498 90 529 150 538 C 236 551 335 543 450 518" pathLength="1" vectorEffect="non-scaling-stroke" data-author-motion="line" />
@@ -137,7 +137,7 @@ export function AuthorChapter() {
       <div className={styles.closingRow}>
         <div className={styles.closingMonogram} aria-hidden="true"><strong>ca.</strong><span /></div>
         <p className={styles.closingStatement}>
-          <span data-author-motion="final">Precisão em cada escolha.</span>
+          <span data-author-motion="final">Naturalidade em cada escolha.</span>
           <em data-author-motion="final">Cuidado em cada encontro.</em>
         </p>
         <div className={styles.closingSeal}><span aria-hidden="true" /><BrandSeal id={uid} /></div>

@@ -1,13 +1,13 @@
 .root {
-  --author-paper: #f7f0f1;
-  --author-ink: #35232a;
-  --author-muted: #776b70;
+  --author-paper: #f7f0e8;
+  --author-ink: #241719;
+  --author-muted: #705d54;
   position: relative;
   isolation: isolate;
   overflow: hidden;
   background:
     radial-gradient(circle at 84% 13%, rgb(255 255 255 / .44), transparent 29%),
-    linear-gradient(180deg, #f6eef0 0%, var(--author-paper) 72%, #faf6f4 100%);
+    linear-gradient(180deg, #f2e8df 0%, var(--author-paper) 72%, #fbf7f2 100%);
   color: var(--author-ink);
 }
 
@@ -61,7 +61,7 @@
   display: flex;
   flex-direction: column;
   font-size: clamp(72px, 6.7vw, 129px);
-  line-height: .73;
+  line-height: .9;
   letter-spacing: -.05em;
 }
 
@@ -107,7 +107,7 @@
 
 .photo img {
   object-fit: cover;
-  object-position: 50% 40%;
+  object-position: 50% 18%;
 }
 
 .card {
@@ -751,3 +751,76 @@
     transform: none;
   }
 }
+
+/* Mobile: copy first, portrait second, with the card resting below the face. */
+@media (max-width: 700px) {
+  .stage {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(25px, 6.8vw, 30px) 6% 0;
+  }
+
+  .copy {
+    position: relative;
+    inset: auto;
+    width: 100%;
+  }
+
+  .copy h2 {
+    max-width: 100%;
+    font-size: clamp(51px, 14.2vw, 61px);
+    line-height: .82;
+  }
+
+  .subcopy {
+    max-width: 72%;
+  }
+
+  .photo {
+    position: relative;
+    inset: auto;
+    order: 2;
+    width: 88%;
+    max-width: none;
+    height: auto;
+    aspect-ratio: .75;
+    margin: clamp(25px, 6.8vw, 31px) 0 0 auto;
+    border-radius: clamp(19px, 5vw, 23px);
+  }
+
+  .photo img {
+    object-position: 50% 24%;
+  }
+
+  .card {
+    position: relative;
+    inset: auto;
+    order: 3;
+    width: 88%;
+    max-width: 360px;
+    min-height: 0;
+    margin: clamp(-82px, -19vw, -68px) auto 0 0;
+    padding: clamp(20px, 5.2vw, 24px);
+  }
+
+  .cardCopy {
+    font-size: clamp(12px, 3.25vw, 14px);
+    line-height: 1.42;
+  }
+
+  .threadMobile {
+    height: 54%;
+    top: 46%;
+  }
+}
+
+@media (max-width: 374px) {
+  .copy h2 { font-size: 49px; }
+}
+.root{--author-paper:var(--paper);--author-ink:var(--ink);--author-muted:var(--muted);background:var(--paper)}
+.cardCopy{font-size:16px;line-height:1.55;letter-spacing:0}
+.cardLabel{font-size:12px;letter-spacing:.12em}
+@media(min-width:701px){.stage{height:clamp(620px,43vw,760px)}.photo img{object-position:50% 25%}}
+@media(max-width:700px){.copy h2{line-height:.92}.cardCopy{font-size:16px;line-height:1.5}.cardLabel{font-size:12px}.cta{font-size:14px;white-space:normal}.photo img{object-position:50% 35%}}
