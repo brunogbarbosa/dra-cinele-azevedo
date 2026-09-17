@@ -18,7 +18,7 @@ export const site = {
   instagramHandle: '@dra.cineleazevedo',
   philosophy: ['SEUS TRAÇOS.', 'SUA ESSÊNCIA.', 'SEU TEMPO.'],
   colors: { paper: '#f5f0e8', ink: '#242620', taupe: '#a58a62', champagne: '#cdaa74', dark: '#432a2c', wine: '#11130f', muted: '#716c62' },
-  images: { hero: '/images/cinele-hero.webp', essence: '/images/cinele-essencia.webp', about: '/images/cinele-sobre.webp', beauty: '/images/cinele-experiencia.webp' },
+  images: { hero: '/images/cinele-hero-retrato.webp', essence: '/images/cinele-essencia.webp', about: '/images/cinele-sobre.webp', beauty: '/images/cinele-experiencia.webp' },
   procedures: [
     { name: 'Harmonização facial full face', description: 'Um olhar para o conjunto, com escolhas individualizadas na avaliação.', image: '/images/resultado-fullface.webp' },
   ] as Procedure[],

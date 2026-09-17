@@ -50,7 +50,7 @@ export function CampaignHero() {
         <div className="campaign-action"><a className="campaign-cta" href={appointmentUrl} target="_blank" rel="noreferrer"><span>AGENDAR AVALIAÇÃO</span><ArrowRight size={22} strokeWidth={1.2}/></a></div>
       </div>
       <figure className="campaign-portrait">
-        <div className="campaign-silhouette"><Image className="campaign-original" src={site.images.hero} alt="Dra. Cinele Azevedo em um ambiente editorial, vestindo vinho." fill preload sizes="100vw"/></div>
+        <div className="campaign-silhouette"><Image className="campaign-original" src={site.images.hero} alt="Retrato da Dra. Cinele Azevedo com roupa preta em um ambiente de tons dourados." fill preload sizes="100vw"/></div>
       </figure>
       <SmileSeal/>
       <p className="campaign-editorial">Beleza<br/>com<br/>identidade<span aria-hidden="true"/></p>
